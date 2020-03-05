@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/set_recycler_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/set_number_weight_used"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/set_number_weight_used"/>
+
+    <EditText
+        android:id="@+id/set_weight_used_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/reps_perf"/>
+
+    <EditText
+        android:id="@+id/set_reps_perf_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:inputType="number"/>
+
+</LinearLayout>

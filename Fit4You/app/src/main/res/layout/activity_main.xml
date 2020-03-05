@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="top|center"
+        android:paddingTop="14dp">
+
+        <Button
+            android:id="@+id/new_workout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/new_workout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:gravity="center_vertical"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+
+        <Button
+            android:id="@+id/max_calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/max_calc_button"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/empty_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/empty_text"
+        android:layout_marginTop="6dp"
+        android:paddingTop="245dp"
+        android:textSize="18dp"/>
+
+</LinearLayout>
+
