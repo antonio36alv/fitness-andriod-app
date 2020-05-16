@@ -14,6 +14,19 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabLayout;
+
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+
+import com.bignerdranch.android.fit4you.ui.main.SectionsPagerAdapter;
+
 public class ExerciseActivity extends AppCompatActivity {
 
     private EditText mExerciseName;
@@ -30,6 +43,7 @@ public class ExerciseActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
+
 
         mNotes = findViewById(R.id.notes_ET);
         //need to save as we keep recording exercises, need to carryover

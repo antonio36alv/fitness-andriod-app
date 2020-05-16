@@ -1,10 +1,7 @@
 <resources>
+    <!--Start Texts for Display-->
     <string name="app_name">Fit4You</string>
-    <string name="new_workout">New Workout</string>
-    <string name="max_calc_button">Max Calculator</string>
     <string name="empty_text">You have no workout logs. Touch \"New Workout\" \nto start logging a workout.</string>
-    <string name="weight_used">Weight Used: </string>
-    <string name="reps_perf">Repetitions Performed: </string>
     <string name="calc_results">Calculate One Rep Max</string>
     <string name="est_max_result">Your Estimated Max: %1$d</string>
     <string name="info1">It is advised that when you actually go to test your max you do not start with your estimated max. The estimated max is
@@ -14,11 +11,26 @@
     This is due to people being able to handle lighter weights better than they can handle heavier weights. One rep maxes
     are really only ideal for big compound exercises like the squat and the bench press, opposed to something like the bicep curl.</string>
     <string name="enter_date">Enter Date of the Workout</string>
-    <string name="ok_button_text">Ok</string>
+    <string name="set_number_weight_used">Set %1$d Weight Used: </string>
+    <!--End Texts for Display-->
+
+    <!--Start Labels -->
+    <string name="weight_used">Weight Used: </string>
+    <string name="reps_perf">Repetitions Performed: </string>
+    <string name="main_check">Main Movement</string>
     <string name="select_TV">Enter Exercise Name: </string>
     <string name="enter_sets_TV">Enter Number of Sets: </string>
-    <string name="main_check">Main Movement</string>
+    <!--End Labels -->
+
+    <!--Start Text for Buttons-->
     <string name="save_workout">Save Workout</string>
     <string name="save_exercise">Save Exercise</string>
-    <string name="set_number_weight_used">Set %1$d Weight Used: </string>
+    <string name="new_workout">New Workout</string>
+    <string name="max_calc_button">Max Calculator</string>
+    <string name="ok_button_text">Ok</string>
+    <string name="next_button_text">Next</string>
+    <string name="title_activity_exercise">activity_exercise</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <!--End Text for Buttons-->
 </resources>
