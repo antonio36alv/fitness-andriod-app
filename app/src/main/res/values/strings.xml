@@ -1,4 +1,7 @@
 <resources>
+
+    <string name="test_text">Test Text</string>
+
     <!--Start Texts for Display-->
     <string name="app_name">Fit4You</string>
     <string name="empty_text">You have no workout logs. Touch \"New Workout\" \nto start logging a workout.</string>
