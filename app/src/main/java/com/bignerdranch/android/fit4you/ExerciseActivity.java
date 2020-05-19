@@ -54,7 +54,7 @@ public class ExerciseActivity extends AppCompatActivity {
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-
+                mViewPager.setCurrentItem(tab.getPosition());
                 if(tab.getPosition() == 0) {
                     mPageAdapter.notifyDataSetChanged();
                 } else if(tab.getPosition() == 1) {

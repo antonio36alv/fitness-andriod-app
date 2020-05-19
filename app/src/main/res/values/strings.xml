@@ -1,6 +1,5 @@
 <resources>
 
-    <string name="test_text">Test Text</string>
 
     <!--Start Texts for Display-->
     <string name="app_name">Fit4You</string>
@@ -15,6 +14,7 @@
     are really only ideal for big compound exercises like the squat and the bench press, opposed to something like the bicep curl.</string>
     <string name="enter_date">Enter Date of the Workout</string>
     <string name="set_number_weight_used">Set %1$d Weight Used: </string>
+    <string name="cardio_tab_text">Cardio</string>
     <!--End Texts for Display-->
 
     <!--Start Labels -->

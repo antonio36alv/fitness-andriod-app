@@ -1,5 +1,8 @@
 package com.bignerdranch.android.fit4you;
 
+import android.os.Debug;
+import android.util.Log;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -19,6 +22,7 @@ public class PageAdapter extends FragmentPagerAdapter {
 
         switch (position) {
             case 0:
+                Log.d("pa", "leelde");
                 return new ResistanceFrag();
             case 1:
                 return new CardioFrag();

@@ -11,7 +11,6 @@ public class CardioFrag extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.frag_cardio, container, false);
-        return super.onCreateView(inflater, container, savedInstanceState);
+        return inflater.inflate(R.layout.frag_cardio, container, false);
     }
 }
