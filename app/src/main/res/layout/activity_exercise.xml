@@ -42,25 +42,6 @@
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-
-    <Button
-        android:id="@+id/ok_exercise_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ok_button_text"/>
-
-    <Button
-        android:id="@+id/save_workout_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/save_workout"/>
-
-    <EditText
-        android:id="@+id/notes_ET"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:inputType="number"/>
+            android:layout_height="wrap_content" />
 
 </LinearLayout >
