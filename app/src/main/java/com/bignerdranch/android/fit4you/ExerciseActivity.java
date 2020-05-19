@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TableLayout;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,18 +15,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.viewpager.widget.ViewPager;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-
-import com.bignerdranch.android.fit4you.ui.main.SectionsPagerAdapter;
 
 public class ExerciseActivity extends AppCompatActivity {
 
@@ -38,15 +31,55 @@ public class ExerciseActivity extends AppCompatActivity {
 
     private static final String KEY = "ExerciseActivity";
 
+    private TabLayout mTabLayout;
+    private ViewPager mViewPager;
+    private TabItem mResistanceTab, mCardioTab;
+
+    private PageAdapter mPageAdapter;
+
     private StringBuilder notes = new StringBuilder();
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_exercise);
 
+        mTabLayout = (TabLayout) findViewById(R.id.tabslayout);
+        mViewPager = (ViewPager) findViewById(R.id.viewpager);
+        mResistanceTab = (TabItem) findViewById(R.id.resistance_tab);
+        mCardioTab = (TabItem) findViewById(R.id.cardio_tab);
+        mPageAdapter = new PageAdapter(getSupportFragmentManager(), mTabLayout.getTabCount());
+
+        mViewPager.setAdapter(mPageAdapter);
+
+        mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+
+                if(tab.getPosition() == 0) {
+                    mPageAdapter.notifyDataSetChanged();
+                } else if(tab.getPosition() == 1) {
+                    mPageAdapter.notifyDataSetChanged();
+                } else {
+                    mPageAdapter.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
+        });
+
+        mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
 
         mNotes = findViewById(R.id.notes_ET);
         //need to save as we keep recording exercises, need to carryover
+
 
         if(savedInstanceState!=null){
             mNotes.setText(savedInstanceState.getString(KEY));
